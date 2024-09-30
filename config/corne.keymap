@@ -44,7 +44,7 @@
         lang: lang {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LALT &kp LEFT_SHIFT>;
+            bindings = <&kp LEFT_SHIFT &kp LALT>;
             label = "LANG";
         };
     };
@@ -76,7 +76,7 @@
 
             bindings = <
 &kp ESCAPE      &kp N1    &kp N2        &kp N3    &kp N4             &kp N5             &kp N6    &kp N7    &kp N8    &kp N9     &kp N0  &kp BSPC
-&kp LEFT_SHIFT  &kp LALT  &kt CAPSLOCK  &lang     &kp K_VOLUME_DOWN  &kp K_VOLUME_UP    &kp LEFT  &kp DOWN  &kp UP    &kp RIGHT  &trans  &trans
+&kp LEFT_SHIFT  &kp LALT  &kt CAPSLOCK  &lang     &kp C_VOLUME_DOWN  &kp C_VOLUME_UP    &kp LEFT  &kp DOWN  &kp UP    &kp RIGHT  &trans  &trans
 &kp LCTRL       &trans    &trans        &trans    &trans             &trans             &trans    &trans    &trans    &trans     &trans  &trans
                                         &kp LGUI  &trans             &kp SPACE          &kp RET   &trans    &kp RALT
             >;
@@ -99,10 +99,10 @@
 
         both_layer {
             bindings = <
-&trans      &trans  &trans  &trans        &trans  &trans       &kp K_PREV  &kp K_PLAY_PAUSE  &kp K_NEXT  &trans   &trans   &kp DEL
-&sys_reset  &trans  &trans  &trans        &trans  &trans       &trans      &trans            &trans      &trans   &trans   &sys_reset
-&kp F1      &kp F2  &kp F3  &kp F4        &kp F5  &kp F6       &kp F7      &kp F8            &kp F9      &kp F10  &kp F11  &kp F12
-                            &kp LEFT_WIN  &trans  &kp SPACE    &kp ENTER   &trans            &trans
+&trans      &trans  &trans  &trans        &trans  &trans       &kp C_PREVIOUS  &kp C_PLAY_PAUSE  &kp C_NEXT  &trans   &trans   &kp DEL
+&sys_reset  &trans  &trans  &trans        &trans  &trans       &trans          &trans            &trans      &trans   &trans   &sys_reset
+&kp F1      &kp F2  &kp F3  &kp F4        &kp F5  &kp F6       &kp F7          &kp F8            &kp F9      &kp F10  &kp F11  &kp F12
+                            &kp LEFT_WIN  &trans  &kp SPACE    &kp ENTER       &trans            &trans
             >;
         };
     };
